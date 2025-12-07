@@ -1,14 +1,13 @@
 .header{
     background:var(--primary);
-    padding:15px 0;
-    position:fixed;
+    padding:20px 0;
+    margin:0;
     width:100%;
-    top:0;
+    
+
+
 }
-body {
-    height: 100px;
-    padding-top: 90px;
-}
+
 .active {
     padding:0 0 0 80px;
     color:#fb2e86;
@@ -43,7 +42,7 @@ body {
 .search-form input{
     padding:10px 12px;
     border:1px solid #ddd;
-    border-right:none;
+
     width:150px;
     height: 30px;
     font-size:15px;
@@ -71,10 +70,78 @@ body {
   }
 
 }
-.paragraph{
+/*end header*/
+
+/*start hero*/
+.hero{
+background-image: url('./../assets/hero.png');
+background-repeat: no-repeat;
+background-position: center;
+background-size: cover;
+height: 462px;
+display: flex;
+align-items: center;
+justify-content: center;
 text-align: center;
-padding: 50px 0 50px 0;
 }
+
+
+.text{
+width: 574px;
+color: #151875;
+font-family: 'Josefin Sans', sans-serif;
+font-size: 35px;
+font-weight: 700;
+line-height: 155%;
+letter-spacing: 0.525px;
+text-align: center;
+}
+
+.pink-btn{
+display: block;
+margin: 25px auto 0;
+background: #FB2E86;
+color: #fff;
+padding: 14px 40px;
+border-radius: 5px;
+font-family: 'Josefin Sans', sans-serif;
+font-size: 18px;
+font-weight: 600;
+border: none;
+}
+@media screen and (min-width:481px) and (max-width: 768px){
+.text{
+width: 90%;
+font-size: 28px;
+line-height: 150%;
+}
+.pink-btn{
+padding: 12px 28px;
+font-size: 16px;
+}
+.hero{
+background-size: cover;
+height: 380px;
+padding: 20px;
+}
+}
+
+@media screen and (min-width:0) and (max-width: 480px){
+.text{
+width: 95%;
+font-size: 22px;
+line-height: 145%;
+}
+.pink-btn{
+padding: 10px 22px;
+font-size: 15px;
+}
+.hero{
+height: 340px;
+}
+}
+/*end hero*/
+
 /*start footer*/
 .footer {
     background: #F2F0FF;
@@ -198,3 +265,4 @@ padding: 50px 0 50px 0;
         padding: 30px 10px;
     }
 }
+/*end footer*/
