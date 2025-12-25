@@ -106,96 +106,176 @@
 /*end header*/
 
 
-/*start featured*/
-.featured-products {
-  text-align: center;
-  font-family: "Josefin Sans", sans-serif;
-  color: #1A0B5B;
-  padding: 50px 0 70px 0;
-  margin:0 0 20px 0;
+/*start hero1*/
+.hero1 {
+  background-color: #F2F0FF;
+  padding: 60px 0;
 }
 
-.featured-products .row {
+.hero1 .row {
   display: flex;
-  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.hero-content {
+  display: flex;
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 50%;
+  justify-content: center;
+}
+
+.text-content {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  max-width: 520px;
+}
+
+.text-content .p1 {
+  color: #FB2E86;
+  font-family: Lato;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.text-content h1 {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 44px;
+  font-weight: 500;
+  line-height: 1.6;
+}
+
+.text-content .p2 {
+  color: #8A8FB9;
+  font-family: Lato;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.shop-now {
+  margin-top: 10px;
+  width: 200px;
+  padding: 12px;
+  border: none;
+  background-color: #FB2E86;
+  color: #fff;
+  border-radius: 3px;
+  transition: 0.3s;
+}
+
+.shop-now:hover {
+  background-color: #151875;
+}
+
+.hero-image {
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-image img{
+  width: 100%;
+  max-width: 500px;
+  
+}
+
+@media screen and (max-width: 992px){
+  .hero1 .row {
+    flex-direction: column;
+    text-align: center;
+    gap: 40px;
+  }
+  .shop-now {
+    margin-inline: auto;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .text-content h1 {
+    font-size: 24px;
+  }
+  .shop-now {
+    width: 100%;
+  }
+}
+
+/*start featured*/
+
+.Featured-Products {
+    text-align: center;
+    font-family:Josefin Sans ;
+    color: #1A0B5B;
+    padding: 140px  0px;
+}
+.Featured-Products .row{
+    display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   gap: 20px;
-  padding:0 0 20px 0;
 }
 
-.product-card .icon img {
-  width: 30px;
-  height: 16px;
+
+.Featured-Products h3{
+    font-family:Lato ;
+    color:#FB2E86;
+}
+.Featured-Products h4{
+    font-family:Josefin Sans ;
+    color:#151875;
 }
 
-.product-card {
-  width: 280px;
-  height: 380px;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  background: #fff;
-  position: relative;
+.Featured-Products .product1{
+    width: 270px;
+    height: 360px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+.Featured-Products .product1 img{
+    width: 100%;
+    height: 200px;        
+    object-fit: contain;
+    background-color: #F6F7FB;
+}
+ .Featured-Products .product1  button{
+    display: none;
+ }
+ .Featured-Products .product1:hover .product-details{
+    background-color: #00009D;
+    width: 100%;
+   
+ }
+
+.Featured-Products .product1 .color{
+    width: 14px;
+    height: 4px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+.color-one{
+background-color: #05E6B7;
+}
+.color-two{
+background-color: #F701A8;
+}
+.color-three{
+background-color: #00009D;
+}
+.Featured-Products .blue-product .color-three{
+    background-color: #FFEAC1;
 }
 
-.chair-wrapper {
-  flex: 0 0 200px;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  padding: 50px 0 0 0;
-  align-items: center;
-  justify-content: center;
-  background-color: #F6F7FB;
-}
-
-.chair-wrapper button , .product-card .icon {
-  display: none;
-}
-
-.product-card .chair {
-  width: 100%;
-  height: 150px;
-  object-fit: contain;
-  background-color: #F6F7FB;
-}
-
-.product-title {
-  font-family: "Lato", sans-serif;
-  color: #FB2E86;
-}
-
-.product-code {
-  font-family: "Josefin Sans", sans-serif;
-  color: #151875;
-}
-
-.product-price {
-  font-weight: bold;
-  color: #1A0B5B;
-}
-
-.color {
-  width: 14px;
-  height: 4px;
-  border-radius: 10px;
-  border: none;
-}
-
-.color-one {
-  background-color: #05E6B7;
-}
-
-.color-two {
-  background-color: #F701A8;
-}
-
-.color-three {
-  background-color: #00009D;
-}
 
 @media screen and (max-width: 992px) {
 
@@ -443,3 +523,6 @@ border: none;
 
 }
 /*end footer*/
+
+
+
