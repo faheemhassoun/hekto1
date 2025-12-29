@@ -401,6 +401,83 @@
 }
 /* end featured*/
 
+/*start shopex*/
+
+.offer {
+  padding: 100px 0;
+  text-align: center;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.shopix-title {
+  color: #1A0B5B;
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 60px;
+}
+
+.offer-grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.offer-card {
+  width: 220px;
+  background: #FFFFFF;
+  padding: 45px 20px;
+  text-align: center;
+  box-shadow: 0 0 10px #e9e9e9;
+  transition: 0.3s ease;
+}
+
+.icon-wrap {
+  width: 65px;
+  height: 65px;
+  background: #FFFFFF;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 25px;
+}
+
+.icon-wrap img {
+  width: 35px;
+  height: 35px;
+  object-fit: contain;
+}
+
+.offer-card h4 {
+  color: #151875;
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+.offer-card p{
+  color: rgba(26, 11, 91, 0.4);
+  font-family: "Lato", sans-serif;
+  font-size: 13px;
+  line-height: 1.7;
+}
+
+@media screen and (max-width: 992px) {
+  .offer-card {
+    width: 260px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .offer {
+    padding: 60px 0;
+  }
+  .offer-card {
+    width: 100%;
+    max-width: 320px;
+  }
+}
+
 /*start hero*/
 .hero{
 background-image: url('./../assets/hero.png');
